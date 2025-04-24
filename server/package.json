@@ -1,0 +1,31 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && npx tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "preserve": "npm run build",
+    "serve": "concurrently \"tsc -w\" \"nodemon dist/index.js\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.0",
+    "@types/typescript": "^2.0.0",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "nodemon": "^3.1.10"
+  }
+}

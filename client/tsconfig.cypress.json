@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.node.json",
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "types": [
+            "cypress"
+        ],
+        "moduleResolution": "bundler"
+    },
+    "include": [
+        "cypress/**/*.ts",
+        "cypress.config.ts"
+    ]
+}

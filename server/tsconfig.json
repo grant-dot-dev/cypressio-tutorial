@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", /* Use the latest ECMAScript version */
+    "module": "ESNext", /* Use ES module syntax */
+    "moduleResolution": "node", /* Node-style module resolution */
+    "esModuleInterop": true, /* Allow default imports from modules with no default export */
+    "skipLibCheck": true, /* Skip type checking of declaration files */
+    "resolveJsonModule": true, /* Allow importing JSON files */
+    "outDir": "./dist", /* Emit output files in the `dist` folder */
+    "strict": true, /* Enable all strict type-checking options */
+    "forceConsistentCasingInFileNames": true, /* Ensure consistent file name casing */
+    "noImplicitAny": true, /* Ensure no implicit 'any' types */
+    "noUnusedLocals": true, /* Disallow unused local variables */
+    "noUnusedParameters": true, /* Disallow unused function parameters */
+    "moduleDetection": "force", /* Enforce module resolution from ES module files */
+    "lib": [
+      "ESNext",
+      "DOM"
+    ], /* Include DOM and ESNext libraries for compatibility */
+    "baseUrl": ".", /* Set the base URL for module resolution */
+    "paths": {
+      "@src/*": [
+        "/*"
+      ] /* Optional: Add paths for aliasing imports */
+    }
+  },
+  "include": [
+    "*.ts" /* Include all TypeScript files in the `src` directory */
+  ],
+  "exclude": [
+    "node_modules" /* Exclude node_modules directory */
+  ]
+}
